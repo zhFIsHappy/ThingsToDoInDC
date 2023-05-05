@@ -1,0 +1,68 @@
+.vertical-split-container {
+    position: relative;
+    display: flex;
+    height: 100%;
+    width: 100%;
+  
+    .vertical-split-left {
+      position: relative;
+      width: 50%;
+      height: 100%;
+      padding: 20px;
+      transition: all 0.3s ease-in-out;
+  
+      &.hovered {
+        opacity: 0.8;
+        box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  
+    .vertical-split-right {
+      position: relative;
+      width: 50%;
+      height: 100%;
+      padding: 20px;
+      transition: all 0.3s ease-in-out;
+  
+      &.hovered {
+        opacity: 0.8;
+        box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  
+    .vertical-split-divider {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 1px;
+      height: 100%;
+      background-color: rgba(60, 60, 60, 0.5);
+      z-index: 1;
+      transform: translateX(-50%);
+      transition: all 0.3s ease-in-out;
+    }
+  
+    .vertical-split-hover {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+      width: 20px;
+      height: 20px;
+      z-index: 2;
+      transition: all 0.2s ease-in-out;
+  
+      &-inner {
+        position: absolute;
+        top: #{hoverOffset - 10}px;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        background-color: #65cd49;
+        border-radius: 50%;
+        transition: all 0.2s ease-in-out;
+      }
+    }
+}

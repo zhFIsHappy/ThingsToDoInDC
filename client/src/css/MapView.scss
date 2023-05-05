@@ -1,0 +1,90 @@
+#map {
+    height: 100%;
+}
+
+// .gm-style-iw-d {
+//     display: flex;
+//     width: 400px;
+// }
+
+.info-window {
+    padding: 0.3em;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #4faf2c;
+    color:#4faf2c;
+}
+
+.info-window-event-basic {
+    display: flex;
+    flex-direction: row;
+    .info-window-event-img {
+        padding: 0.2em;
+    }
+    .info-window-event-geo {
+        padding-left: 1em;
+        padding-top: 0.2em;
+    }
+    .info-attribute {
+        padding: 0.4em;
+        text-align: left;
+    }
+    padding-bottom: 1em;
+}
+
+.info-window-event-extra {
+    display: flex;
+    .info-window-event-ticket-url:visited {
+        color: blue;
+    }
+    .info-window-event-ticket {
+        width: 70%;
+    }
+    .info-window-event-fav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30%;
+    }
+}
+
+.info-attribute {
+    padding: 0.4em;
+    text-align: left;
+}
+
+.info-attribute-name {
+    font-weight: bold;
+}
+
+.info-attribute-col {
+    padding: 0.2em;
+    text-align: left;
+    flex-direction: column;
+}
+
+.info-attribute-url-wrapper {
+    text-align: left;
+}
+
+.info-window-add-fav {
+    background-color: #4faf2c;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+  }
+  
+.info-window-add-fav:focus {
+    outline: none;
+}
+  
+.info-window-add-fav:hover {
+    background-color: #52bf2d;
+}

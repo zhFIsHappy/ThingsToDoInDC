@@ -1,0 +1,68 @@
+$collapse-color: #29d33a;
+$primary-color: #1d281d;
+$dark-primary-color: darken($primary-color, 10%);
+
+.collapse-panel {
+  margin-bottom: 20px;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+  color: #24e437;
+  &:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .header {
+    background-color: $primary-color;
+    color: $collapse-color;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+      background-color: $dark-primary-color;
+    }
+
+    .title {
+      margin: 0;
+      font-size: 25px;
+    }
+
+    .arrow {
+      font-size: 16px;
+      font-weight: bold;
+      transition: transform 0.3s ease-in-out;
+
+      &.up {
+        transform: rotate(180deg);
+      }
+
+      &.down {
+        transform: rotate(0);
+      }
+    }
+  }
+
+  .content {
+    overflow: hidden;
+    height: 0;
+    padding: 0;
+    transition: height 0.3s ease-in-out, padding 0.3s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.05);
+
+    .inner {
+      padding: 10px;
+    }
+  }
+
+  &.open {
+    .content {
+      height: auto;
+      padding: 10px;
+      transition: height 0.3s ease-in-out, padding 0.3s ease-in-out;
+    }
+  }
+}

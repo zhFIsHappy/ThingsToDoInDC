@@ -1,0 +1,85 @@
+$primary-color: #36cc1f;
+$thumb-size: 20px;
+$thumb-border-width: 2px;
+$thumb-border-color: #fff;
+$thumb-box-shadow-color: rgba($primary-color, 0.5);
+$thumb-hover-box-shadow-color: rgba($primary-color, 0.7);
+$thumb-active-box-shadow-color: rgba($primary-color, 0.9);
+
+input[type="range"] {
+  appearance: none;
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #e6e6e6;
+  outline: none;
+  padding: 0;
+  margin: 0;
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: $thumb-size;
+    height: $thumb-size;
+    border-radius: 50%;
+    background-color: $primary-color;
+    border: $thumb-border-width solid $thumb-border-color;
+    box-shadow: 0px 0px 5px $thumb-box-shadow-color;
+    margin-top: -($thumb-size / 2);
+    transition: box-shadow 0.2s;
+
+    &:hover {
+      box-shadow: 0px 0px 10px $thumb-hover-box-shadow-color;
+    }
+
+    &:active {
+      box-shadow: 0px 0px 10px $thumb-active-box-shadow-color;
+    }
+  }
+}
+
+$primary-color: #36cc1f;
+$thumb-size: 20px;
+$thumb-border-width: 2px;
+$thumb-border-color: #fff;
+$thumb-box-shadow-color: rgba($primary-color, 0.5);
+$thumb-hover-box-shadow-color: rgba($primary-color, 0.7);
+$thumb-active-box-shadow-color: rgba($primary-color, 0.9);
+
+.double-slider {
+  position: relative;
+  height: 10px;
+  background-color: #e6e6e6;
+  border-radius: 5px;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+
+  .track {
+    position: absolute;
+    height: 10px;
+    background: $primary-color;
+    border-radius: 5px;
+  }
+
+  .thumb {
+    position: absolute;
+    width: $thumb-size;
+    height: $thumb-size;
+    border-radius: 50%;
+    background-color: $primary-color;
+    border: $thumb-border-width solid $thumb-border-color;
+    box-shadow: 0px 0px 5px $thumb-box-shadow-color;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+
+    &:hover {
+      box-shadow: 0px 0px 10px $thumb-hover-box-shadow-color;
+    }
+
+    &:active {
+      box-shadow: 0px 0px 10px $thumb-active-box-shadow-color;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+// .homePage{
+//     display: flex;
+//     flex-direction: row;
+//     // align-items: center;
+//     .homeMain{
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         width: 100%;
+//         height: 100%;
+//         background-color: rgb(36, 45, 38);
+//     }
+// }
+.homePage {
+    display: flex;
+
+    height: 100%;
+    width: 100%;
+    background-color: #2b2c36;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+  }
+  
+  .homeMain {
+    height: 100%;
+    width: 100%;
+   
+
+    .titleContainer{
+        height: 100%;
+        width: 100%;
+        
+        h2 {
+            font-size: 40px;
+            color: #52f746;
+            animation: titleAnimation 1s ease-in-out infinite alternate;
+          }
+        p {
+            font-size: 24px;
+            color: rgb(86, 235, 91);
+          }
+      }
+  }
+  
+  @keyframes titleAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }

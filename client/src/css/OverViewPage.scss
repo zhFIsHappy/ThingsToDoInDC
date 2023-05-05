@@ -1,0 +1,52 @@
+.overViewPage{
+    display: flex;
+    flex-direction: row;
+    height:100%;
+    // align-items: center;
+    .overViewMain{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        background-color: rgb(34, 35, 38);
+        .register{
+            margin-top: 20%;
+            height:100vh;
+            
+            color: greenyellow;
+        }
+        .login{
+            margin-top: 20%;
+            height:100vh;
+            
+            color: greenyellow;
+        }
+        .infoContainer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: auto;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+          }
+          
+        .infoContainer p:first-child {
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
+        
+        .infoContainer p:nth-child(2) {
+          margin-left: 5%;
+          text-align: left;
+          flex-grow:1;
+        }
+        
+        .infoContainer p:last-child {
+          color: #00ff84;
+          cursor: pointer;
+        }
+    }
+}
