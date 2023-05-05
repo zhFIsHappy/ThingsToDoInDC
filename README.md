@@ -5,15 +5,15 @@
 ## People spending too much time finding the places to go to in the leisure time. This project intergrates Google Map API and TicketMaster API and display the spots in map view nearby DC area
 ## This is also a final project for CS5614 Database Mangement System
 
-#Contributors 
+# Contributors 
 
-##Team Leader
+## Team Leader
 [Zhehao Fan](https://github.com/zhFIsHappy)
 
-##Backend
+## Backend
 [Mystery person](https://google.com)
 
-##Frontend
+## Frontend
 [Tinghui Wu](https://github.com/Oswaldaze)
 
 [Rundong Liang](https://github.com/RundongLiangvt)
