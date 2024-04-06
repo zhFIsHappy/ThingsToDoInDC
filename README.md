@@ -1,9 +1,9 @@
 # CS5614-DBMS-ThingsToDoInDC-
-## VT CS5614 Graduate Project: Using Google Map API and TicketMaster API to display funny spots on map near DC area
+## VT CS5614 Graduate Project: Using Google Map API and TicketMaster API to display place to go % events to attend on map near DC area
 
 # Motivation:
-## People spending too much time finding the places to go to in the leisure time. This project intergrates Google Map API and TicketMaster API and display the spots in map view nearby DC area
-## This is also a final project for CS5614 Database Mangement System
+## People spend too much time finding places to go to in their leisure time. This project integrates Google Map API and TicketMaster API and displays the spots in map view near DC area
+## This is also a final project for CS5614 Database Management System
 
 # Contributors 
 
